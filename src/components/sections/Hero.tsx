@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-screen flex items-center pt-10 bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800"
+      className="relative min-h-screen flex items-center pt-24 bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800"
     >
       <div 
         className="absolute top-0 right-0 w-full h-full bg-cover bg-center opacity-10 dark:opacity-10"

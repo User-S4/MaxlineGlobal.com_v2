@@ -18,6 +18,7 @@ import Warehousing from './pages/services/warehousing';
 import Packing from './pages/services/packing';
 import ExhibitionCargo from './pages/services/exhibition-cargo';
 import ProjectForwarding from './pages/services/project-forwarding';
+import Login from './pages/login';
 
 // Helper component for section scrolling
 const HomeWithSectionScroll: React.FC = () => {
@@ -63,6 +64,7 @@ function App() {
                 <Route path="/services/packing" element={<Packing />} />
                 <Route path="/services/exhibition-cargo" element={<ExhibitionCargo />} />
                 <Route path="/services/project-forwarding" element={<ProjectForwarding />} />
+                <Route path="/login" element={<Login />} />
               </Routes>
             </main>
             <Footer />
