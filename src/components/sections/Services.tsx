@@ -62,8 +62,7 @@ export const Services: React.FC = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className={`group bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl ${animatingIndex === index ? 'z-30 animate-popout' : ''}`}
-              style={animatingIndex === index ? { position: 'relative' } : {}}
+              className="group bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl"
             >
               <div className="h-48 overflow-hidden">
                 <img 
@@ -105,17 +104,7 @@ export const Services: React.FC = () => {
             </div>
           ))}
         </div>
-        <style>{`
-          .animate-popout {
-            animation: popout-zoom 0.8s cubic-bezier(.24,1.69,.57,.94) forwards;
-          }
-          @keyframes popout-zoom {
-            0% { transform: scale(1); box-shadow: 0 4px 24px rgba(0,0,0,0.12); opacity: 1; }
-            50% { transform: scale(1.12); box-shadow: 0 16px 64px rgba(0,0,0,0.25); opacity: 1; }
-            80% { transform: scale(0.5); box-shadow: 0 2px 8px rgba(0,0,0,0.10); opacity: 0.7; }
-            100% { transform: scale(0.2); box-shadow: 0 0px 0px rgba(0,0,0,0); opacity: 0; }
-          }
-        `}</style>
+
       </div>
     </section>
   );
