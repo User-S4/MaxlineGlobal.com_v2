@@ -46,7 +46,7 @@ export const Hero: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-12 mb-12 md:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-600 dark:text-blue-400 mb-6 leading-tight animate-fade-in">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-600 dark:text-blue-400 mb-6 leading-tight animate-fade-in text-center md:text-left">
               {t('heroTitle')}
             </h1>
             <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-xl animate-fade-in-delay">
@@ -83,7 +83,7 @@ export const Hero: React.FC = () => {
     />
   ))}
   {/* 24/7 badge always on top */}
-  <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-600 dark:bg-blue-500 rounded-full flex items-center justify-center text-white text-lg font-bold z-20 shadow-lg">
+  <div className="absolute left-1/2 -translate-x-1/2 bottom-2 w-20 h-20 sm:w-24 sm:h-24 md:left-auto md:translate-x-0 md:-top-4 md:-right-4 md:bottom-auto bg-blue-600 dark:bg-blue-500 rounded-full flex items-center justify-center text-white text-lg font-bold z-20 shadow-lg">
     24/7
   </div>
 </div>
