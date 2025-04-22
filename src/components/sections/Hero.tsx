@@ -93,7 +93,7 @@ export const Hero: React.FC = () => {
       </div>
       {/* Move scroll down animation outside the container so it sits at the bottom of the viewport */}
       <div
-        className="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce z-20 transition-opacity duration-500"
+        className="absolute bottom-2 w-full flex justify-center animate-bounce z-20 transition-opacity duration-500"
         style={{
           opacity: (() => {
             const fadeStart = window.innerHeight * 0.0025;
